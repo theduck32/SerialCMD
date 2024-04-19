@@ -38,8 +38,8 @@ strip SerialCMD-lite.exe
  
 ```
 pacman -Sy base-devel gcc git
-git clone https://github.com/theduck32/serialcmd
-cd serialcmd
+git clone https://github.com/theduck32/SerialCMD
+cd SerialCMD
 g++ -Os -static -o SerialCMD-lite.exe main-lite.cpp
 g++ -Os -static -o SerialCMD-full.exe main-full.cpp
 strip SerialCMD-lite.exe
@@ -54,8 +54,8 @@ strip SerialCMD-full.exe
  1. First install MinGW and Git using the package manager provided by your Linux distro. I will be using Arch Linux's package manager for this
  ```
  sudo pacman -Sy mingw-w64-gcc mingw-w64-headers git
- git clone https://github.com/theduck32/serialcmd
- cd serialcmd
+ git clone https://github.com/theduck32/SerialCMD
+ cd SerialCMD
  x86_64-w64-mingw32-g++ -static -Os -o SerialCMD-full.exe main-full.cpp 
  x86_64-w64-mingw32-g++ -static -Os -o SerialCMD-lite.exe main-full.cpp 
  x86_64-w64-mingw32-strip SerialCMD-full.exe 
